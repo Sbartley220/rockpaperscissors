@@ -8,21 +8,16 @@
 
 
 // DOCUMENT READY FUNCTION BELOW
-var user = $("#input").val();
-$("#shoot").click(function(){
-$("#userChoice").text(user);
-});
+var userChoice = $("#input").val();
 
 $("#shoot").click(function(){
-var comp = $("#input").val();
-$("#computerChoice").text(comp);
-});
-
-if(scissors > paper ) {
-        $("#text").text("nice try");
-    } else  if(paper > rock) {
-        $("#text").text("sorry");
+    $("#userChoice").text(userChoice);
+    var randomNumber= Math.random();
+    var computerChoice; 
+    if (randomNumber< .333){
+        computerChoice= "rock"
     }
-    else (rock > scissors)
+    console.log(computerChoice);
 });
+
 
